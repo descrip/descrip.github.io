@@ -1,0 +1,444 @@
+<link rel="stylesheet" type="text/css" href="markdown.css" media="screen" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<title>Lozics: Mechanics Review</title>
+
+<h1 id="sph3un-mechanics-review">SPH3UN - Mechanics Review</h1>
+
+<p>For use with Ms. Lozo's SPH3UN class. #LOLZO</p>
+
+<p>By Jeffrey Zhao and Dr. Michael Alafonsolo LeFred von Buttsnifferstein, Sr., Ph. D.</p>
+
+<p>This is meant for people who have barely paid attention in class and have done no homework. We all know who you are. Most of this is a mix of KhanAcademy and PhysicsClassroom, and you should probably learn from there if you want more.</p>
+
+<p>We've been holding this back for a while because Lozo said she would teach some more, but that didn't happen. So enjoy.</p>
+
+<p>Same stuff: if you've find something that's wrong or I've forgotten something, send us a message.</p>
+
+<p style="color: red;">UPDATE: We've fixed 3. Example Problem 2. The answer was <script id="MathJax-Element-216" type="math/tex">69\ \mathrm {m/s^2}</script> and not <script id="MathJax-Element-217" type="math/tex">61 \ \mathrm {m/s^2}</script>.</p>
+
+<p>Table of Contents:</p>
+
+<p><div class="toc">
+<ul>
+<li><a href="#sph3un-mechanics-review">SPH3UN - Mechanics Review</a><ul>
+<li><ul>
+<li><a href="#1-what-is-work">1. What is work?</a><ul>
+<li><a href="#work-in-the-same-direction-as-displacement">Work in the same direction as displacement</a></li>
+<li><a href="#work-at-an-angle">Work at an angle</a></li>
+</ul>
+</li>
+<li><a href="#2-what-is-energy">2. What is energy?</a><ul>
+<li><a href="#the-law-of-the-conservation-of-energy">The Law of the Conservation of Energy</a></li>
+<li><a href="#kinetic-energy">Kinetic Energy</a></li>
+<li><a href="#gravitational-potential-energy">(Gravitational) Potential Energy</a></li>
+<li><a href="#tying-it-all-together">Tying it all together</a></li>
+<li><a href="#relationship-between-work-and-energy">Relationship between Work and Energy</a></li>
+</ul>
+</li>
+<li><a href="#3-conservative-and-non-conservative-forces">3. Conservative and Non-Conservative Forces</a><ul>
+<li><a href="#example-problem-1">Example Problem 1</a></li>
+<li><a href="#example-problem-2">Example Problem 2</a></li>
+</ul>
+</li>
+<li><a href="#4-what-is-power">4. What is Power?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+<h3 id="1-what-is-work">1. What is work?</h3>
+
+
+
+<h4 id="work-in-the-same-direction-as-displacement">Work in the same direction as displacement</h4>
+
+<p><em>Work</em> is the amount of energy transferred by a force. <em>Energy</em> is the ability to do work.</p>
+
+<p>Since this is a recursive definition, physicists define work as</p>
+
+
+
+<p><script id="MathJax-Element-1" type="math/tex; mode=display">
+W = Fd
+</script></p>
+
+<p>where <script id="MathJax-Element-2" type="math/tex">W</script> is the amount of work done by the object, <script id="MathJax-Element-3" type="math/tex">F</script> is the amount of force done on the object, and <script id="MathJax-Element-4" type="math/tex">d</script> is the displacement of the object. <strong>This equation is only defined if the direction of <script id="MathJax-Element-5" type="math/tex">F</script> is the same as the direction of <script id="MathJax-Element-6" type="math/tex">d</script>.</strong></p>
+
+<p>Work is measured in the SI unit of joules, <script id="MathJax-Element-7" type="math/tex">\mathrm J</script>, the energy transferred when applying a force of <script id="MathJax-Element-8" type="math/tex">1\ \mathrm N</script> through a distance of <script id="MathJax-Element-9" type="math/tex">1\ \mathrm m</script>.</p>
+
+<p>For example,</p>
+
+<ul>
+<li>If Ms. Lozo pushes a crate <script id="MathJax-Element-10" type="math/tex">6.0\ \mathrm m</script> with a force of <script id="MathJax-Element-11" type="math/tex">9.0\ \mathrm N</script>, then she does <script id="MathJax-Element-12" type="math/tex">6.0 \times 9.0 = 54\ \mathrm J</script> of work on the crate.</li>
+<li>If Ms. Lozo then lifts the crate up <script id="MathJax-Element-13" type="math/tex">1.4\ \mathrm m</script>, applying a force of <script id="MathJax-Element-14" type="math/tex">2.6\ \mathrm N</script>, then she does <script id="MathJax-Element-15" type="math/tex">1.4 \times 2.6 = 3.6\ \mathrm J </script> of work on the crate.</li>
+<li>If Ms. Lozo holds the crate with her arms with a force of <script id="MathJax-Element-16" type="math/tex">5\ \mathrm N</script>, then she is not displacing the crate at all and she is doing <script id="MathJax-Element-17" type="math/tex">5 \times 0 = 0\ \mathrm J</script>, or no work on the crate.</li>
+</ul>
+
+
+
+<h4 id="work-at-an-angle">Work at an angle</h4>
+
+<p>But what if the force applied on the object is in a different direction then the displacement of the object? Then physicists define work as</p>
+
+
+
+<p><script id="MathJax-Element-18" type="math/tex; mode=display">
+W = Fd \cos \theta
+</script></p>
+
+<p>where <script id="MathJax-Element-19" type="math/tex">\theta</script> is the angle between the directions of the displacement and force vectors. It is possible for negative work, for example, if <script id="MathJax-Element-20" type="math/tex">\theta = 180°</script>.a</p>
+
+<p><img src="http://www.physicsclassroom.com/getattachment/calcpad/energy/thetaMng.gif" alt="leo sucks" title=""></p>
+
+<ul>
+<li>The crate is now magically moving <script id="MathJax-Element-21" type="math/tex">50.0\ \mathrm m</script> north.
+<ul><li>If Ms. Lozo pushes it with a force of <script id="MathJax-Element-22" type="math/tex">2.5\ \mathrm N</script> north, she does work equal to <script id="MathJax-Element-23" type="math/tex">50.0 \times 2.5 \times \cos(0°) = 130\ \mathrm J</script>.</li>
+<li>If Ms. Lozo pushes it with a force of <script id="MathJax-Element-24" type="math/tex">2.5\ \mathrm N</script> northwest, she does work equal to <script id="MathJax-Element-25" type="math/tex">50.0 \times 2.5 \times \cos(45°) = 88\ \mathrm J</script>.</li>
+<li>If Ms. Lozo pushes it with a force of <script id="MathJax-Element-26" type="math/tex">2.5\ \mathrm N</script> west, she does work equal to <script id="MathJax-Element-27" type="math/tex">50.0 \times 2.5 \times \cos(90°) = 0\ \mathrm J</script>.</li>
+<li>If Ms. Lozo pushes it with a force of <script id="MathJax-Element-28" type="math/tex">2.5\ \mathrm N</script> south, she does work equal to <script id="MathJax-Element-29" type="math/tex">50.0 \times 2.5 \times \cos(180°) = -130\ \mathrm J</script>.</li></ul></li>
+</ul>
+
+<p>If you're lazy, just use <script id="MathJax-Element-30" type="math/tex">W = Fd \cos \theta</script> and ignore <script id="MathJax-Element-31" type="math/tex">W = Fd</script>.</p>
+
+
+
+<h3 id="2-what-is-energy">2. What is energy?</h3>
+
+<p>Again, <em>work</em> is the amount of energy transferred by a force. <em>Energy</em> is the ability to do work. We now know the definition of work, so now let's find out about energy and how we can use it in our calculations.</p>
+
+
+
+<h4 id="the-law-of-the-conservation-of-energy">The Law of the Conservation of Energy</h4>
+
+<p>The Law of the Conservation of Energy is a fundamental theory in physics. This means that their is no proof to it, but we haven't seen anything that breaks this law. Yet.</p>
+
+<p>The Law of the Conservation of Energy states that the total energy in an isolated system remains constant. Energy cannot be created or destroyed, it can only change form.</p>
+
+<p>How is this law important? First, let's learn some forms of energy:</p>
+
+
+
+<h4 id="kinetic-energy">Kinetic Energy</h4>
+
+<p>Let's start playing with the equation <script id="MathJax-Element-32" type="math/tex">W = Fd</script>. From that equation:</p>
+
+
+
+<p><script id="MathJax-Element-33" type="math/tex; mode=display">
+W = Fd = mad
+</script></p>
+
+<p>For some <script id="MathJax-Element-34" type="math/tex">m</script> and <script id="MathJax-Element-35" type="math/tex">a</script> of the object. Solving for <script id="MathJax-Element-36" type="math/tex">d</script>,</p>
+
+
+
+<p><script id="MathJax-Element-37" type="math/tex; mode=display">
+d = \frac{W}{ma}
+</script></p>
+
+<p>Imagine Ms. Lozo pushing a crate from rest to some speed. Using the equation <script id="MathJax-Element-38" type="math/tex">v_f^2 = v_i^2 + 2ad</script>, since the object starts at rest, <script id="MathJax-Element-39" type="math/tex">v_i = 0</script>. Also, we can subsitute in the previous equation:</p>
+
+
+
+<p><script id="MathJax-Element-40" type="math/tex; mode=display">
+v_f^2 = 2a\frac{W}{ma}
+</script></p>
+
+
+
+<p><script id="MathJax-Element-41" type="math/tex; mode=display">
+W = \frac{1}{2}mv_f^2
+</script></p>
+
+<p>Physicists define the <script id="MathJax-Element-42" type="math/tex">W</script> in this euqation as <script id="MathJax-Element-43" type="math/tex">E_k</script>. So finally, we have <script id="MathJax-Element-44" type="math/tex">E_k= \frac{1}{2}mv_f^2</script>, where <script id="MathJax-Element-45" type="math/tex">m</script> is the mass of the object and <script id="MathJax-Element-46" type="math/tex">v_f</script> is the final velocity of that object.</p>
+
+<p>This is a very important equation. <script id="MathJax-Element-47" type="math/tex">E_k</script> is <em>kinetic energy</em>, or the amount of energy an object possesses due to its motion, which is equal to its work and is also measured in joules. So when we know the mass of an object and the final velocity after the force is applied to the object if it is accelerated from rest, then we know how much energy the object possess from its motion.</p>
+
+<p>For example, Ms. Lozo has another crate with a mass of <script id="MathJax-Element-48" type="math/tex">5.0\ \mathrm {kg}</script>, and pushes it to a velocity of <script id="MathJax-Element-49" type="math/tex">12.0\ \mathrm {m/s}</script> from rest. The crate would have kinetic energy equal to <script id="MathJax-Element-50" type="math/tex">\frac{1}{2} \times 5.0 \times 12.0^2 = 360\ \mathrm J</script>.</p>
+
+
+
+<h4 id="gravitational-potential-energy">(Gravitational) Potential Energy</h4>
+
+<p>If the Law of the Conservation of Energy states that all the energy is the same, then when Ms. Lozo drops a crate off of a cliff, then where does the kinetic energy come from?</p>
+
+<p><em>Potential energy</em> is defined as the amount of energy stored by an object because of its position. In this unit, probably the only potential energy we will ever need to know is <em>gravitational potential energy</em>, where the amount of potential energy depends on the height of the object from the ground.</p>
+
+<p>Imagine a crate with a mass of <script id="MathJax-Element-51" type="math/tex">m</script> on the edge of a cliff of height <script id="MathJax-Element-52" type="math/tex">h</script>. We want to find how much gravitational potential energy it has. Using the equation</p>
+
+
+
+<p><script id="MathJax-Element-53" type="math/tex; mode=display">
+W = Fd
+</script></p>
+
+<p>we already know that <script id="MathJax-Element-54" type="math/tex">F = mg</script>, and <script id="MathJax-Element-55" type="math/tex">d = h</script> in this case. Like with <script id="MathJax-Element-56" type="math/tex">E_k</script>, physicists define the work here to be <script id="MathJax-Element-57" type="math/tex">E_g</script> — gravitational potential energy. <script id="MathJax-Element-58" type="math/tex">E_p</script> can be used for potential energy in general.</p>
+
+
+
+<p><script id="MathJax-Element-59" type="math/tex; mode=display">
+E_g = mgh
+</script></p>
+
+<p>For example, this time Ms. Lozo is in an elevator, which can be thought to be a very large metal crate. The elevator is <script id="MathJax-Element-60" type="math/tex">75\ \mathrm m</script> above ground floor and has a mass of <script id="MathJax-Element-61" type="math/tex">512\ \mathrm {kg}</script>, including the mass of Ms. Lozo. The elevator would have <script id="MathJax-Element-62" type="math/tex">75 \times 512 = 38400\ \mathrm J</script> of potential energy.</p>
+
+
+
+<h4 id="tying-it-all-together">Tying it all together</h4>
+
+<p>Okay, so what does this all matter? What do we use <script id="MathJax-Element-63" type="math/tex">E_k</script>, <script id="MathJax-Element-64" type="math/tex">E_p</script>, and the Law of the Conservation of Energy for? Lets walk through some questions.</p>
+
+<p>For example, if Ms. Lozo takes her crate and throws it upward with an initial velocity of <script id="MathJax-Element-65" type="math/tex">10.0\ \mathrm {m/s}</script>, then, neglecting air friction, what will be the maximum height of the crate?</p>
+
+<p>From the Law of the Conservation of Energy, all the energy within this system will be the same, and there are only two energies with the throwing and falling of the crate: <script id="MathJax-Element-66" type="math/tex">E_k</script> and <script id="MathJax-Element-67" type="math/tex">E_g</script>. Therefore, <script id="MathJax-Element-68" type="math/tex">E_k = E_g</script>, and</p>
+
+
+
+<p><script id="MathJax-Element-69" type="math/tex; mode=display">
+\frac{1}{2}mv_f^2 = mgh
+</script></p>
+
+
+
+<p><script id="MathJax-Element-70" type="math/tex; mode=display">
+h = \frac{10.0^2}{2g} = 5.1 \ \mathrm m
+</script></p>
+
+<p>But you're probably saying, "Big deal. I could do that with kinematics equations. Get on my level." Well, how about the next question?</p>
+
+<p><img src="http://i.imgur.com/VUIEnMQ.png" alt="Sal would be so proud." title=""></p>
+
+<p>Ms. Lozo has found a red hollow wooden ball, which can be thought of as a spherical crate. Next to her house is a hill that has no friction on its side with some crazy slopes and Ms. Lozo knows nothing about its shape and dimensions, except that the hill is <script id="MathJax-Element-71" type="math/tex">40.0\ \mathrm m</script> tall and that she released a ball from the top of the hill. What will be the velocity of the ball when it hits the bottom of the hill?</p>
+
+<p>The hill has an awkward slope and Ms. Lozo knows nothing about the numbers behind it, and even if you knew the exact shape of the slope, it would be painful to use kinematics equations for it. However, if we use the energy of the ball, we can get our answer quickly. Since there is no friction and the only two energies are <script id="MathJax-Element-72" type="math/tex">E_g</script> and <script id="MathJax-Element-73" type="math/tex">E_k</script>, then <script id="MathJax-Element-74" type="math/tex">E_k = E_g</script> again and</p>
+
+
+
+<p><script id="MathJax-Element-75" type="math/tex; mode=display">
+\frac{1}{2}mv_f^2 = mgh
+</script></p>
+
+
+
+<p><script id="MathJax-Element-76" type="math/tex; mode=display">
+v_f^2 = 2 \times g \times 40.0 = 784\ \mathrm{m/s}
+</script></p>
+
+
+
+<p><script id="MathJax-Element-77" type="math/tex; mode=display">
+v_f = 28.0\ \mathrm {m/s}
+</script></p>
+
+<p>This is one of the many uses for expression the energy of an object. We can express the movement of the object without knowing how it moves. Now you can see the advantage of using energy.</p>
+
+
+
+<h4 id="relationship-between-work-and-energy">Relationship between Work and Energy</h4>
+
+<p>We know what work is, and we know what energy is, but how are these two concepts related? It turns out that work is actually equal to the <em>change in energy</em>. Don't believe me? Let's see if we can show that <script id="MathJax-Element-78" type="math/tex">W = \Delta{E_k}</script>.</p>
+
+<p>To show this, we're going to use two concepts from kinematics. The first is the equation <script id="MathJax-Element-79" type="math/tex">a = \frac{v_2 - v_1}{\Delta{t}}</script>. The second is <script id="MathJax-Element-80" type="math/tex">\Delta{d} = \frac{\Delta{t}}{2}(v_1 + v_2)</script>. Knowing these two facts, we may now begin:</p>
+
+
+
+<p><script id="MathJax-Element-81" type="math/tex; mode=display">
+\begin{align}
+W & = ma\Delta{d} \\
+& = m\frac{v_2 - v_1}{\Delta{t}}\times\frac{\Delta{t}}{2}(v_1 + v_2) \\
+& = m\frac{(v_2 - v_1)(v_2 + v_1)}{2} \\
+& = m\frac{v_2^2 - v_1^2}{2} \\
+& = \frac12mv_2^2 - \frac12mv_1^2 \\
+& = E_{k2} - E_{k1} = \Delta{E_k}
+\end{align}
+</script></p>
+
+<p>Neat huh? So work is just the change in kinetic energy! </p>
+
+<p>What about gravitational potential energy? Can we show that <script id="MathJax-Element-82" type="math/tex">W = \Delta{E_g}</script>? We certainly can, and it's actually <em>easier</em>.</p>
+
+
+
+<p><script id="MathJax-Element-83" type="math/tex; mode=display">
+\begin{align}
+W & = F_g\Delta{d} \\
+& = mg\Delta{d} \\
+& = mg(d_2 - d_1) \\
+& = mgd_2 - mgd_1 \\
+& = E_{g2} - E_{g1} = \Delta{E_g}
+\end{align}
+</script> </p>
+
+<p>There is an important distinction to make here though. When we say <script id="MathJax-Element-84" type="math/tex">W = \Delta{E_g}</script>, that is the work done by <em>gravity</em>. As you know, multiple forces can be applied to the same object, so similarly different "works" can refer to the same object. Often times you will see <script id="MathJax-Element-85" type="math/tex">W_F</script> to refer to the work done by the force <script id="MathJax-Element-86" type="math/tex">F</script> (for example, <script id="MathJax-Element-87" type="math/tex">W_{F_f}</script> refers to the work done by the force of frction <script id="MathJax-Element-88" type="math/tex">F_f</script>).</p>
+
+<p>In general, we can actually say <script id="MathJax-Element-89" type="math/tex">W = \Delta{E_T}</script>, where <script id="MathJax-Element-90" type="math/tex">E_T</script> is the total energy acting on an object.</p>
+
+<p>An astute reader may have caught something a little strange at this point. If the energy throughout a system remains the same, then doesn't <script id="MathJax-Element-91" type="math/tex">E_{k2} - E_{k1} = 0</script>, so doesn't that mean that work is always zero? To explain why this is not the case, we have to introduce the concepts of <strong>conservative and non-conservative forces</strong>.</p>
+
+
+
+<h3 id="3-conservative-and-non-conservative-forces">3. Conservative and Non-Conservative Forces</h3>
+
+<p>Imagine you are lifting a box, and you lift it <script id="MathJax-Element-92" type="math/tex">h</script> meters in a straight vertical line. Now imagine you are lifting the same box to the same height, but this time you carry it upwards in a wavy pattern. Does one require more work than the other? The answer is <strong>no</strong>.</p>
+
+<p>On an intuitive level, this makes sense. If both times I'm applying the same upwards force and travelling the same distance, why would one require more work than another?</p>
+
+<p>Now consider pushing a box instead. One time you push it in a straight line, and travel from point <script id="MathJax-Element-93" type="math/tex">P_1</script> to point <script id="MathJax-Element-94" type="math/tex">P_2</script>. Then you push it again, and you also travel from <script id="MathJax-Element-95" type="math/tex">P_1</script> to <script id="MathJax-Element-96" type="math/tex">P_2</script>, but you take a really curvy path. Does one path require more work than the other? The answer <em>this</em> time is actually <strong>yes</strong>.</p>
+
+<p>This happens because there are <strong>non-conservative forces</strong> acting on the system. We've only been looking at <strong>conservative forces</strong> so far, like <script id="MathJax-Element-97" type="math/tex">F_g</script> or <script id="MathJax-Element-98" type="math/tex">F_{app}</script> without friction. These are forces that do not change the total energy of the system. Non-conservative forces on the other hand change the energy of the system by transferring energy to forms that are not useful.</p>
+
+<p>An example of a non-conservative force is when we push an object.  Some of the energy is lost overcoming the force of friction, which turns into heat.</p>
+
+<p>Before we said that <script id="MathJax-Element-99" type="math/tex">W = \Delta{E_T}</script>. More specifically, we should say <script id="MathJax-Element-100" type="math/tex">W_{NC} = \Delta{E_T}</script>. That is, the work done by non-conservative forces is equal to the change in energy throughout a system. If <script id="MathJax-Element-101" type="math/tex">W_{NC} = 0</script>, then there are only conservative forces acting on a system, and the total energy of the system was <em>conserved</em>. If <script id="MathJax-Element-102" type="math/tex">W_{NC} \ne 0</script>, then the total energy of the system was <em>not conserved</em>, and there are non-conservative forces acting on the system.</p>
+
+<p>If <script id="MathJax-Element-103" type="math/tex">W_{NC} > 0</script>, then energy was transferred <em>to</em> the system. If <script id="MathJax-Element-104" type="math/tex">W_{NC} < 0</script>, then energy was transferred <em>from</em> the system.</p>
+
+
+
+<h4 id="example-problem-1">Example Problem 1</h4>
+
+<p>Consider a ball with mass <script id="MathJax-Element-105" type="math/tex">28</script> grams that starts at the top of a parabolic ramp at <script id="MathJax-Element-106" type="math/tex">h_1 = 1\text{m}</script>, and rolls down and back up to a height of <script id="MathJax-Element-107" type="math/tex">h_2 = 0.42\text{m}</script>. At both points the ball's velocity is <script id="MathJax-Element-108" type="math/tex">0</script>. We want to figure out how much energy was lost due to the force of friction.</p>
+
+<p>If we didn't know about the relationship between work and energy, and only knew about the laws of kinematics, we would be completely screwed for this question! But with non-conservative forces under our belt, this is a piece of cake.</p>
+
+<p>We know the energy at the beginning of the system is 
+<script id="MathJax-Element-109" type="math/tex; mode=display">
+\begin{align}
+E_\text{initial} = E_{g1} = mgh_1 & = 2.8\times10^{-2}\text{kg}\times9.81\text{m}/\text{s}^2\times1\text{m} \\
+& = 2.7\times10^{-2}\text{J}
+\end{align}
+</script>
+and the energy at the end of the system is
+<script id="MathJax-Element-110" type="math/tex; mode=display">
+\begin{align}
+E_\text{final} = E_{g2} = mgh_2 & = 2.8\times10^{-2}\text{kg}\times9.81\text{m}/\text{s}^2\times0.42\text{m} \\
+& = 1.2\times10^{-2}\text{J}
+\end{align}
+</script></p>
+
+<p>Thus, we have
+<script id="MathJax-Element-111" type="math/tex; mode=display">
+\begin{align}
+W_{NC} = E_\text{final} - E_\text{initial} & = 2.7\times10^{-2} - 1.2\times10^{-2}\text{J} \\
+& = 1.5\times10^{-2}\text{J}
+\end{align}
+</script></p>
+
+<p>Thus the energy lost due to friction was <script id="MathJax-Element-112" type="math/tex">0.15\text{J}</script>.</p>
+
+
+
+<h4 id="example-problem-2">Example Problem 2</h4>
+
+<p>A <script id="MathJax-Element-186" type="math/tex">0.20\ \text{kg}</script> rocket in a fireworks display is launched from rest and follows an erratic flight path to reach a height of <script id="MathJax-Element-187" type="math/tex">h</script>. The height <script id="MathJax-Element-188" type="math/tex">h</script> is <script id="MathJax-Element-189" type="math/tex">29.0\ \text{m}</script> above the ground. In the process, <script id="MathJax-Element-190" type="math/tex">425\ \text{J}</script> of work is done on the rocket by non-conservative forces generated by the burning propellant. Ignoring air resistance and the mass lost due to the burning propellant, find the final speed of the rocket at the point <script id="MathJax-Element-191" type="math/tex">h</script>.</p>
+
+<p>Although a little more involved, we still have the tools to solve this problem. We have
+<script id="MathJax-Element-192" type="math/tex; mode=display">
+W_{NC} = (E_{g2} + E_{k2}) - (E_{g1} + E_{k1}) = 425\ \text{J}
+</script>
+We want <script id="MathJax-Element-193" type="math/tex">v_2</script> right? To get it, we have to rearrange the above equation a bit.
+<script id="MathJax-Element-194" type="math/tex; mode=display">
+\begin{align}
+W_{NC} & = (E_{g2} + E_{k2}) - (E_{g1} + E_{k1}) \\
+& = \frac12mv_2^2 + mgh_2 - \frac12mv_1^2 - mgh_1
+\end{align}
+</script>
+From this we get
+<script id="MathJax-Element-195" type="math/tex; mode=display">
+\frac12mv_2^2 = \frac12mv_1^2 + mg(h_1 - h_2) + W_{NC}
+</script>
+so
+<script id="MathJax-Element-196" type="math/tex; mode=display">
+\begin{align}
+v_2 & = \sqrt{\frac{2}{m}\left(\frac12mv_1^2 + mg(h_1 - h_2) + W_{NC}\right)} \\
+& = \sqrt{v_1^2 + 2g(h_1 - h_2) + \frac{2}{m}W_{NC}}
+\end{align}
+</script>
+plugging in the numbers gives us
+<script id="MathJax-Element-197" type="math/tex; mode=display">
+\begin{align}
+v_2 & = \sqrt{0^2 + 2\times9.81\times29.0 + \frac{2}{0.20}\times425} \\
+& = 69\text{m}/\text{s}^2
+\end{align}
+</script></p>
+
+<p>Thus the final velocity of the rocket at height <script id="MathJax-Element-198" type="math/tex">h</script> is <script id="MathJax-Element-199" type="math/tex">69\text{m}/\text{s}^2</script>.</p>
+
+<h3 id="4-what-is-power">4. What is Power?</h3>
+
+<p><script id="MathJax-Element-127" type="math/tex; mode=display">
+P = \frac{W}{t}
+</script></p>
+
+<p><script id="MathJax-Element-128" type="math/tex">P</script>, <em>Power</em>, is defined as the rate of doing work. It is equivalent to the amount of energy consumed per unit time, where <script id="MathJax-Element-129" type="math/tex">W</script> is the amount of work and <script id="MathJax-Element-130" type="math/tex">t</script> is the amount of time. It is measure in Watts (<script id="MathJax-Element-131" type="math/tex">W</script>), which is 1 joule per second. One horsepower is equivalent to about 750 Watts.</p>
+
+<p>For example, if Ms. Lozo does <script id="MathJax-Element-132" type="math/tex">300.0\ \mathrm J</script> of work on her crate when pushing it over a period of <script id="MathJax-Element-133" type="math/tex">10.0</script> secondkedit.io/kedit.io/kedit.io/kedit.io/kedit.io/s, then she does power equal to <script id="MathJax-Element-134" type="math/tex">300.0 / 10.0 = 30.0\ \mathrm W</script>, or <script id="MathJax-Element-135" type="math/tex">0.04</script> horsepower.</p>
+
+<p>If we play with the equation for a bit, we can change it into a different form. Since <script id="MathJax-Element-136" type="math/tex">W = Fd\cos\theta</script> for some <script id="MathJax-Element-137" type="math/tex">F</script>, force, <script id="MathJax-Element-138" type="math/tex">\theta</script>, angle, and <script id="MathJax-Element-139" type="math/tex">d</script>, distance,</p>
+
+
+
+<p><script id="MathJax-Element-140" type="math/tex; mode=display">
+P = \frac{Fd \cos \theta}{t} = \frac{mad\cos\theta}{t}
+</script></p>
+
+<p>Since <script id="MathJax-Element-141" type="math/tex">\frac{d}{t} = v</script> for some <script id="MathJax-Element-142" type="math/tex">v</script>, velocity, of the object,</p>
+
+
+
+<p><script id="MathJax-Element-143" type="math/tex; mode=display">
+P = F v \cos \theta
+</script></p>
+
+<p>Since <script id="MathJax-Element-144" type="math/tex">F = ma</script>, we can break down the equation even further to</p>
+
+
+
+<p><script id="MathJax-Element-145" type="math/tex; mode=display">
+P = mav \cos \theta
+</script></p>
+
+<p>We now have an equation relating the velocity of an object to its power. That's about it, since efficiency will not be on the test. Let's do some problems from Lozo:</p>
+
+<p>Questions:</p>
+
+<ol>
+<li><p>How much power is developed by a <script id="MathJax-Element-146" type="math/tex">50.0\ \mathrm{kg}</script> that is being thrown in the air <script id="MathJax-Element-147" type="math/tex">3.00\ \mathrm m</script> by Ms. Lozo in <script id="MathJax-Element-148" type="math/tex">2.50\ \mathrm s</script>?</p></li>
+<li><p>How long does it take for Ms. Lozo's <script id="MathJax-Element-149" type="math/tex">500\ \mathrm W</script> power crate-pushing arms to do <script id="MathJax-Element-150" type="math/tex">100\ \mathrm {kW·h}</script> of work?</p></li>
+<li><p>Ms. Lozo is riding in an elevator which can be though as a large metal crate. It can produce <script id="MathJax-Element-151" type="math/tex">2200.0\ \mathrm W</script> of power and has a mass of <script id="MathJax-Element-152" type="math/tex">1100.0\ \mathrm {kg}</script>, including Ms. Lozo, and moves at a constant velocity. What is its velocity?</p></li>
+</ol>
+
+<p>Answers:</p>
+
+<ol>
+<li><p><script id="MathJax-Element-153" type="math/tex">P = \frac{W}{t} = \frac{mgh}{t} = \frac{50.0 \times 9.81 \times 3.00}{2.50} = 588.6\ \mathrm W</script></p></li>
+<li><p>Don't let <script id="MathJax-Element-154" type="math/tex">\ \mathrm {kW·h}</script> fool you. Since <script id="MathJax-Element-155" type="math/tex">P = \frac{W}{t}</script>, <script id="MathJax-Element-156" type="math/tex">1\
+\mathrm {W·s} = 1\ \mathrm J</script>. Converting <script id="MathJax-Element-157" type="math/tex">\ \mathrm {kW·h}</script> to <script id="MathJax-Element-158" type="math/tex">J</script>:</p>
+
+<p><script id="MathJax-Element-159" type="math/tex; mode=display"> 100\ \mathrm {kW·h} = 100000\ \mathrm {W·h} = 3.6 \times 10^8 J
+    </script></p>
+
+<p>From there, since <script id="MathJax-Element-160" type="math/tex">P=\frac{W}{t}</script>,</p>
+
+<p><script id="MathJax-Element-161" type="math/tex; mode=display"> 500 = \frac{3.6 \times 10^8}{t} </script></p>
+
+<p>Solving , <script id="MathJax-Element-162" type="math/tex">t = 720000\ \mathrm s</script>.</p></li>
+<li><p>We know that </p>
+
+<p><script id="MathJax-Element-163" type="math/tex; mode=display"> P = \frac{W}{t} = \frac{mad}{t} = mav </script> </p>
+
+<p>Since we know <script id="MathJax-Element-164" type="math/tex">m</script> and <script id="MathJax-Element-165" type="math/tex">P</script>, and are trying to find <script id="MathJax-Element-166" type="math/tex">v</script>, we have to
+find a value for <script id="MathJax-Element-167" type="math/tex">a</script>. Since the elevator is being affected by
+gravity, which causes an acceleration of <script id="MathJax-Element-168" type="math/tex">-9.81\ \mathrm {m/s}</script>  but
+is moving at a constant velocity, <script id="MathJax-Element-169" type="math/tex">a = 9.81\ \mathrm {m/s}</script>.</p>
+
+<p><script id="MathJax-Element-170" type="math/tex; mode=display">
+    2200.0 = 1100.0 \times 9.81 \times v </script></p>
+
+<p>Solving, <script id="MathJax-Element-171" type="math/tex">v = 0.20\ \mathrm {m/s}</script>.</p></li>
+</ol>
