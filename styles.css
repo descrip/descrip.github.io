@@ -26,20 +26,12 @@ body {
     padding: 20px;
 }
 
-a {
-    color: #ccc;
-}
-
-a:visited {
+a, a:visited, a:active, a:focus {
     color: #ccc;
 }
 
 a:hover {
     color: #444;
-}
-
-a:active {
-    color: #ccc;
 }
 
 .portal {
