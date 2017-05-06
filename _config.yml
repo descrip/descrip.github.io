@@ -65,6 +65,34 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: cactus-dark
 
+# hexo-all-minifier config
+# https://www.npmjs.com/package/hexo-all-minifier
+html_minifier:
+  enable: true
+  ignore_error: false
+  exclude:
+
+css_minifier:
+  enable: true
+  exclude: 
+    - '*.min.css'
+
+js_minifier:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude: 
+    - '*.min.js'
+
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
