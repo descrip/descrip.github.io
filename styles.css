@@ -1,47 +1,56 @@
 html, body, .container-table {
-    height: 100%;
-}
-
-.container-table {
-    display: table;
-}
-.vertical-center-row {
-    display: table-cell;
-    vertical-align: middle;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    min-height: 100%;
-    background-image: url("fractal-background.jpg");
-    background-color: #000;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background-color: #1fa67a;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 400px;
 }
 
 .card {
-    background-color: #000;
-    color: #ccc;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
+  background-color: #fff;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 10px 10px;
 }
 
-.card .name {
-    margin-top: 5px;
-}
-
-a, a:visited, a:active, a:focus {
-    color: #ccc;
-}
-
-a:hover {
-    color: #444;
+.name {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 46px;
 }
 
 .portal {
-    font-size: 2em;
+  font-size: 2em;
 }
 
-.portal:hover {
-    color: #444;
+a, a:visited, a:active, a:focus {
+  color: #000;
+}
+
+a:hover {
+  color: #1fa67a;
 }
