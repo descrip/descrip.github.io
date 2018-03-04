@@ -45,13 +45,17 @@ a {
 }
 
 .portal {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .portal a {
-  color: #000;
+  color: #333;
 }
 
-.portal a:visited{
+.portal a:visited {
+  color: #333;
+}
+
+.portal a:hover {
   color: #000;
 }
