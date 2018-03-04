@@ -41,7 +41,13 @@ html, body {
 }
 
 a {
-  color: #468eaf;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #23527c;
+  text-decoration: underline;
 }
 
 .portal {
