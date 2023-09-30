@@ -23,21 +23,25 @@ html, body {
 }
 
 .container {
-  width: 350px;
+  width: 280px;
 }
 
 .card {
   background-color: #eee;
   padding: 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gabarito', sans-serif;
   border-radius: 5px;
 }
 
 .name {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 46px;
-  text-align: center;
+  /* font-size: 46px; */
+  /* text-align: center; */
+}
+
+.blurb {
+  margin-top: 5px;
 }
 
 a {
