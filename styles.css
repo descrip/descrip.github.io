@@ -4,7 +4,7 @@ html, body {
   height: 100%;
 }
 
-.profile {
+.my-profile {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -14,7 +14,7 @@ html, body {
   margin-bottom: 20px;
 }
 
-.centered {
+.my-centered {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -22,26 +22,27 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-.container {
+.my-container {
   width: 280px;
 }
 
-.card {
+.my-card {
   background-color: #eee;
   padding: 30px;
   font-family: 'Gabarito', sans-serif;
   border-radius: 5px;
 }
 
-.name {
+.my-name {
   margin-top: 5px;
   margin-bottom: 5px;
   /* font-size: 46px; */
   /* text-align: center; */
 }
 
-.blurb {
+.my-blurb {
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 a {
