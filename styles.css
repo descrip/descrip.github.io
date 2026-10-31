@@ -1,72 +1,219 @@
-html, body {
+:root {
+  --bg: #faf9f5;
+  --text: #1f1e1d;
+  --muted: #6b6862;
+  --rule: #e3e0d8;
+  --accent: #b5532f;
+  --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1a18;
+    --text: #ecebe6;
+    --muted: #a39f96;
+    --rule: #34322e;
+    --accent: #e08a62;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
   margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.my-profile {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
-.my-centered {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.my-container {
-  width: 280px;
-}
-
-.my-card {
-  background-color: #eee;
-  padding: 30px;
-  font-family: 'Gabarito', sans-serif;
-  border-radius: 5px;
-}
-
-.my-name {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  /* font-size: 46px; */
-  /* text-align: center; */
-}
-
-.my-blurb {
-  margin-top: 5px;
-  margin-bottom: 10px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
-  color: #337ab7;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
 
 a:hover {
-  color: #23527c;
-  text-decoration: underline;
+  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
-.portal {
-  font-size: 1.5em;
+/* Header */
+
+.site-header {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px 0;
 }
 
-.portal a {
-  color: #333;
+.site-title {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-decoration: none;
 }
 
-.portal a:visited {
-  color: #333;
+/* Main column */
+
+.page {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 72px 24px 48px;
+  flex: 1;
 }
 
-.portal a:hover {
-  color: #000;
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.portrait {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 0 0 8px;
+}
+
+.role {
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.bio p {
+  margin: 0 0 1.1em;
+}
+
+/* Links */
+
+.links {
+  margin-top: 56px;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+.links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.links li {
+  border-bottom: 1px solid var(--rule);
+}
+
+.links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 14px 0;
+  text-decoration: none;
+}
+
+.link-label {
+  font-size: 21px;
+}
+
+.link-meta {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--muted);
+  text-align: right;
+}
+
+.links a:hover .link-meta {
+  color: var(--accent);
+}
+
+/* Footer */
+
+.site-footer {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 24px 40px;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Small screens */
+
+@media (max-width: 560px) {
+  body {
+    font-size: 18px;
+  }
+
+  .site-header {
+    padding: 24px 16px 0;
+  }
+
+  .page {
+    padding: 48px 16px 32px;
+  }
+
+  .site-footer {
+    padding: 24px 16px 32px;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .portrait {
+    width: 112px;
+    height: 112px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .link-label {
+    font-size: 19px;
+  }
 }
